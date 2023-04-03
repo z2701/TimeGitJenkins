@@ -22,7 +22,13 @@ import javax.swing.JOptionPane;
 public class Time
 {
 	public static void main(String[] args) 
+	
 	{
+		int totalSeconds = getTotalSeconds("10:10:10");
+		System.out.println("Github Total Seconds = "
+		+totalSeconds);
+		
+		/*
 		try
 		{
 			
@@ -56,7 +62,7 @@ public class Time
 		catch(Exception e)
 		{
 			System.out.println("An unexpected Exception occurred");
-		}  
+		}  */
 	}  
 
 	public static int getTotalSeconds(String time)throws NumberFormatException, StringIndexOutOfBoundsException {
@@ -107,6 +113,8 @@ public static int getTotalMilliseconds(String time)throws NumberFormatException,
 		return Integer.parseInt(time.substring(0,2));
 	}
 	
+	
+
 	
 	
 	
